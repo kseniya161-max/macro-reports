@@ -1,9 +1,8 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-
-from macro_reports.reports.average_gdp import AverageGDPReport
-from macro_reports.reports.base import Report
+from .average_gdp import AverageGDPReport
+from .base import Report
 
 
 class UnknownReportError(ValueError):

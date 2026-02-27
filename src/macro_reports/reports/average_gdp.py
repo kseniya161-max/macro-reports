@@ -3,8 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
 
-from macro_reports.io.csv_reader import MacroRow
-from macro_reports.reports.base import Report
+from ..io.csv_reader import MacroRow
+from .base import Report
 
 
 @dataclass(frozen=True)

@@ -2,9 +2,9 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
-from macro_reports.io.csv_reader import read_rows
-from macro_reports.reports.registry import UnknownReportError, get_available_reports, get_report
-from macro_reports.render.table import print_table
+from .io.csv_reader import read_rows
+from .reports.registry import UnknownReportError, get_available_reports, get_report
+from .render.table import print_table
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
